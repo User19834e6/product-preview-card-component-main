@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  background-color: hsl(30deg, 38%, 92%);
+}
+
+.card {
+  width: 344px;
+  height: 612px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 68px auto;
+  background-color: hsl(0deg, 0%, 100%);
+}
+.card__first-section__image {
+  width: 100%;
+}
+.card__second-section__product {
+  color: hsl(228deg, 12%, 48%);
+  text-transform: uppercase;
+  font-size: 1em;
+  letter-spacing: 3px;
+  margin: 18px 24px 8px;
+}
+.card__second-section__title {
+  font-family: "Fraunces", serif;
+  margin: 0 24px 16px 24px;
+  font-size: 2.2em;
+  line-height: 34px;
+  color: hsl(212deg, 21%, 14%);
+}
+.card__second-section__description {
+  margin: 0 24px 24px 24px;
+  font-size: 1em;
+  color: hsl(228deg, 12%, 48%);
+  line-height: 22px;
+}
+.card__second-section__price {
+  display: flex;
+  gap: 16px;
+  margin: 0 24px 16px 24px;
+  align-items: center;
+}
+.card__second-section__price__discount {
+  font-family: "Fraunces", serif;
+  font-size: 2.3em;
+  color: hsl(158deg, 36%, 37%);
+}
+.card__second-section__price__value {
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+.card__second-section__button {
+  width: 295px;
+  height: 50px;
+  background-color: hsl(158deg, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.1em;
+  font-weight: 700;
+  display: block;
+  margin: auto;
+}
+.card__second-section__button:hover {
+  cursor: pointer;
+  background-color: hsl(156deg, 42%, 18%);
+}
+.card__second-section__button__icon {
+  margin-right: 12px;
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 600px;
+    height: 450px;
+    display: flex;
+    margin: 175px auto 75px;
+  }
+  .card__first-section {
+    width: 300px;
+  }
+  .card__first-section__image {
+    content: url("../images/image-product-desktop.jpg");
+  }
+  .card__second-section {
+    width: 300px;
+  }
+  .card__second-section__product {
+    margin: 32px 24px 16px 24px;
+  }
+  .card__second-section__description {
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .card__second-section__price {
+    margin-bottom: 26px;
+  }
+  .card__second-section__button {
+    width: 240px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
